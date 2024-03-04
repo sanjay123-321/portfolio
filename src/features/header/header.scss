@@ -1,0 +1,19 @@
+.profile-image-wrapper {
+  border-radius: 50%;
+  border: 3px solid #e9e9e9;
+  background-color: #d9d9d9;
+  margin: 20px 20px;
+  box-shadow: 0 1px 18px white;
+}
+
+.connect-btn-wrapper {
+  .connect-btn {
+    border-radius: 8px;
+    font-family: 'Outfit';
+    border: none;
+    color: black;
+    &:hover {
+      cursor: none;
+    }
+  }
+}

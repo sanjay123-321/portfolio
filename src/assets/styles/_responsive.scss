@@ -1,0 +1,209 @@
+@media only screen and (max-width: 1200px) {
+  //topHeader
+  .profile-image-wrapper {
+    img {
+      @include width(80px !important);
+    }
+  }
+  //intro responsive scss
+  .intro-box {
+    @include flexDirections(column);
+    @include textAlign(center);
+    @include width(90% !important);
+
+    .intro-image-wrapper {
+      @include width(100% !important);
+
+      .intro-image {
+        @include height(250px !important);
+        @include marginTop(40px);
+      }
+    }
+    .intro-content {
+      @include width(100% !important);
+
+      .intro-title {
+        @include padding(0px 10px);
+      }
+      .intro-desc-wrapper {
+        @include padding(0px 15px);
+      }
+    }
+  }
+
+  //skills responsive scss
+  .skills-box {
+    @include flexDirections(column);
+    @include textAlign(center);
+    @include width(90% !important);
+
+    .intro-image-wrapper {
+      .intro-image {
+        @include marginTop(0px !important);
+      }
+    }
+    .intro-image-wrapper {
+      @include width(100% !important);
+    }
+    .intro-content {
+      @include width(100% !important);
+    }
+    .skill-icon-container {
+      @include padding(15px 20px);
+      gap: 15px 0px;
+      justify-content: center;
+    }
+  }
+
+  //social responsive scss
+  .social-box {
+    @include flexDirections(column);
+    @include textAlign(center);
+    @include width(90% !important);
+
+    .intro-image-wrapper {
+      @include width(100% !important);
+    }
+    .intro-content {
+      @include width(100% !important);
+
+      .intro-title {
+        @include marginTop(0px !important);
+      }
+      .social-icons-container {
+        @include padding(15px 20px);
+        gap: 15px 10px;
+        justify-content: center;
+      }
+    }
+  }
+
+  //project responsive scss
+  .project-box {
+    @include flexDirections(column);
+    @include textAlign(center);
+    @include width(90% !important);
+
+    .intro-image-wrapper {
+      .intro-image {
+        @include marginTop(0px !important);
+      }
+    }
+    .intro-image-wrapper {
+      @include width(100% !important);
+    }
+    .intro-content {
+      @include width(100% !important);
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  //intro responsive scss
+  .intro-box {
+    @include width(90% !important);
+
+    .intro-content {
+      .intro-title {
+        font-size: 35px !important;
+      }
+      .intro-desc-wrapper {
+        .intro-description {
+          font-size: 15px;
+          @include padding(0px 20px);
+        }
+      }
+    }
+  }
+
+  //skills responsive scss
+  .skills-box {
+    @include width(90% !important);
+
+    .intro-content {
+      .intro-title {
+        font-size: 35px !important;
+      }
+    }
+  }
+
+  //social responsive scss
+  .social-box {
+    @include width(90% !important);
+
+    .intro-content {
+      .intro-title {
+        font-size: 35px !important;
+      }
+    }
+  }
+
+  //project responsive scss
+  .project-box {
+    @include width(90% !important);
+
+    .intro-content {
+      .intro-title {
+        font-size: 35px !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  * {
+    cursor: default;
+  }
+  .ring,
+  .dot {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .intro-image {
+    @include width(178px !important);
+    @include height(178px !important);
+  }
+  .social-box {
+    .intro-image {
+      @include width(160px !important);
+      @include height(174px !important);
+    }
+  }
+
+  .project-box {
+    .intro-image {
+      @include width(150px !important);
+      @include height(154px !important);
+      @include padding(20px 0px);
+    }
+    .intro-content {
+      .intro-title {
+        font-size: 30px !important;
+      }
+      .intro-desc-wrapper {
+        .intro-description {
+          font-size: 15px;
+          text-align: justify;
+          @include padding(0px 20px);
+        }
+      }
+    }
+  }
+
+  .intro-box {
+    @include width(90% !important);
+
+    .intro-content {
+      .intro-title {
+        font-size: 30px !important;
+      }
+      .intro-desc-wrapper {
+        .intro-description {
+          font-size: 15px;
+          @include padding(0px 20px);
+        }
+      }
+    }
+  }
+}

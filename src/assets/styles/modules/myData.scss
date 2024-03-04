@@ -1,0 +1,194 @@
+@import '../../styles/variables';
+@import '../_mixin.scss';
+@import '../_extend.scss';
+@import '../_fonts.scss';
+
+//intro css
+.intro-box {
+  @include box();
+  @include width(calc(100% - 38%));
+  @include margin(22px auto);
+
+  .intro-image-wrapper {
+    @include width(35%);
+
+    .intro-image {
+      @extend %object__fit--cover;
+      @include width(250px);
+      @include height(400px);
+    }
+  }
+
+  .intro-content {
+    @include width(60%);
+
+    .intro-title {
+      font-family: 'Poppins';
+      letter-spacing: 5px;
+      @include margin(0);
+      @include lineHeight(unset);
+      color: $white-color;
+    }
+
+    .intro-desc-wrapper {
+      @include marginTop(35px);
+
+      .intro-description {
+        font-family: 'Inter-medium';
+        @include lineHeight(33px);
+        color: $light-grey-color;
+        transition: color 2s 1s;
+
+        &:hover {
+          color: $white-color;
+          transition: background 1s, color 1s;
+        }
+      }
+    }
+  }
+}
+
+//skills css
+.skills-box {
+  @include box();
+  @include width(calc(100% - 38%));
+  @include margin(65px auto);
+
+  .intro-image-wrapper {
+    @include width(35%);
+
+    .intro-image {
+      @include width(250px);
+      @include height(250px);
+      @include marginTop(40px);
+    }
+  }
+
+  .intro-content {
+    @include width(60%);
+
+    .intro-title {
+      font-family: 'Poppins';
+      letter-spacing: 2px;
+      @include margin(0);
+      @include lineHeight(unset);
+      color: $white-color;
+    }
+
+    .skill-icon-container {
+      .tool-tip {
+        font-family: 'Inter';
+      }
+    }
+  }
+}
+
+//social css
+.social-box {
+  @include box();
+  @include width(calc(100% - 38%));
+  @include margin(22px auto);
+
+  .social-link--btn {
+    font-family: 'Inter-medium';
+    @include border(1px, solid, $white-color);
+    background-color: $background-color-transparent;
+    color: $white-color;
+    transition: background-color 1s, color 1s;
+
+    &:hover {
+      background-color: $white-color;
+      @include border(1px, solid, $background-color-transparent);
+      color: $black-color;
+      transition: background-color 1s, color 1s;
+    }
+  }
+
+  .intro-image-wrapper {
+    @include width(35%);
+
+    .intro-image {
+      @include marginTop(40px);
+    }
+  }
+
+  .intro-content {
+    @include width(60%);
+
+    .intro-title {
+      font-family: 'Poppins';
+      letter-spacing: 2px;
+      @include margin(0);
+      @include lineHeight(unset);
+      color: $white-color;
+    }
+  }
+}
+
+//project css
+
+.project-box {
+  @include box();
+  @include width(calc(100% - 38%));
+  @include margin(22px auto);
+
+  .intro-image-wrapper {
+    @include width(35%);
+
+    .intro-image {
+      @include width(250px);
+      @include height(250px);
+      @include marginTop(40px);
+    }
+  }
+
+  .intro-content {
+    padding: 40px;
+
+    .intro-title {
+      font-family: 'Poppins';
+      letter-spacing: 5px;
+      @include margin(0);
+      @include lineHeight(unset);
+      color: $white-color;
+    }
+
+    .intro-desc-wrapper {
+      @include marginTop(35px);
+
+      .intro-description {
+        font-family: 'Inter-medium';
+        @include lineHeight(33px);
+
+        .project-link {
+          text-decoration: underline;
+          color: $light-grey-color !important;
+          width: fit-content;
+
+          &:hover {
+            color: $white-color !important;
+            text-decoration: none;
+            transition: background 1s, color 1s;
+          }
+        }
+
+        color: $light-grey-color;
+        transition: color 2s 1s;
+
+        &:hover {
+          color: $white-color;
+          transition: background 1s, color 1s;
+        }
+      }
+    }
+  }
+}
+
+//footer
+.footer-title {
+  font-family: 'Inter-bold';
+  color: $light-grey-color;
+  @include margin(0);
+  @include padding(60px);
+  @include textAlign(center);
+}
