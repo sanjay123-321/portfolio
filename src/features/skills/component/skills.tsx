@@ -42,10 +42,10 @@ const Skills = () => {
           <div className="flex flex--wrap mt--30 gap-15 align__items--center skill-icon-container">
             <div
               className=" position--relative flutter"
-              data-tooltip-content="Flutter"
+              data-tooltip-content="flutter"
             >
-              <Tooltip anchorSelect=".Flutter" className="tool-tip" />
-              <img src={flutter} alt="Flutter" />
+              <Tooltip anchorSelect=".flutter" className="tool-tip" />
+              <img src={flutter} alt="flutter" />
             </div>
             <div
               className=" position--relative Bloc"
@@ -62,11 +62,11 @@ const Skills = () => {
               <img src={jsImage} alt="javascript" />
             </div>
             <div
-              className="position--relative cplus"
-              data-tooltip-content="C++"
+              className="position--relative cplusplus"
+              data-tooltip-content="cplusplus"
             >
-              <Tooltip anchorSelect=".C++" />
-              <img src={Cplus} alt="C++" />
+              <Tooltip anchorSelect=".cplusplus" />
+              <img src={Cplus} alt="cplusplus" />
             </div>
             <div
               className="position--relative html"
@@ -83,15 +83,15 @@ const Skills = () => {
               <img src={cssImage} alt="css3" />
             </div>
             <div
-              className=" position--relative mySql"
-              data-tooltip-content="MySql"
+              className=" position--relative mysql"
+              data-tooltip-content="mysql"
             >
-              <Tooltip anchorSelect=".MySql" />
-              <img src={MySql} alt="MySql" />
+              <Tooltip anchorSelect=".mysql" />
+              <img src={MySql} alt="mysql" />
             </div>
             <div
               className=" position--relative nodejs"
-              data-tooltip-content="Nodejs"
+              data-tooltip-content="nodejs"
             >
               <Tooltip anchorSelect=".nodejs" />
               <img src={nodeJsImage} alt="nodejs" />
